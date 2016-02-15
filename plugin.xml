@@ -20,7 +20,7 @@
 	
     <!-- android -->
     <platform name="android">
-        <framework src="com.google.android.gms:play-services-ads:8.4.0" />
+        <framework src="com.google.android.gms:play-services-ads:+" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Admob" >
