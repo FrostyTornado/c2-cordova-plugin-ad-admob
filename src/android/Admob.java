@@ -331,9 +331,11 @@ public class Admob extends CordovaPlugin implements PluginDelegate, Plugin {
 
     public void _preloadInterstitialAd() {
         pluginDelegate._preloadInterstitialAd();
+        Log.e(LOG_TAG, "_preloadInterstitialAd");
     }
 
     public void _showInterstitialAd() {
         pluginDelegate._showInterstitialAd();
+        Log.e(LOG_TAG, "_showInterstitialAd");
     }
 }
