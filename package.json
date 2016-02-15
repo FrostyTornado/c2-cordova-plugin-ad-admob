@@ -1,0 +1,38 @@
+{
+    "name": "cordova-plugin-ad-admob",
+    "version": "0.0.1",
+    "description": "Show admob banner and interstitial ad",
+    "cordova": {
+        "id": "cordova-plugin-ad-admob",
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/frostytornado/cordova-plugin-ad-admob.git"
+    },
+    "keywords": [
+        "cordova",
+        "plugin",
+        "ad",
+        "admob",
+        "monetisation",
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios",
+        "cordova-wp8"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ],
+    "author": "Frosty Tornado",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/frostytornado/cordova-plugin-ad-admob/issues"
+    },
+    "homepage": "https://github.com/frostytornado/cordova-plugin-ad-admob#readme"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-ad-admob"
+        version="0.0.1">
+    <name>Cordova Admob Plugin</name>
+    <description>Show admob banner and interstitial ad</description>
+    <author>Jean-Pierre Jacobs (Frosty Tornado)</author>		
+    <license>MIT</license>
+    <keywords>cordova,plugin,ad,admob,monetisation</keywords>
+    <repo>https://github.com/frostytornado/cordova-plugin-ad-admob</repo>
+    <issue>https://github.com/frostytornado/cordova-plugin-ad-admob/issues</issue> 	
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+	
+    <js-module src="www/admob.js">
+        <clobbers target="window.admob" />
+    </js-module>
+	
+    <!-- android -->
+    <platform name="android">
+        <framework src="com.google.android.gms:play-services-ads:8.4.0" />
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Admob" >
+                <param name="android-package" value="com.frostytornado.cordova.plugin.ad.admob.Admob"/>
+            </feature>
+        </config-file>
+		
+        <source-file src="src/android/Admob.java" target-dir="src/com/frostytornado/cordova/plugin/ad/admob" />		
+        <source-file src="src/android/AdmobOverlap.java" target-dir="src/com/frostytornado/cordova/plugin/ad/admob" />		
+        <source-file src="src/android/AdmobSplit.java" target-dir="src/com/frostytornado/cordova/plugin/ad/admob" />
+    </platform>
+</plugin>
