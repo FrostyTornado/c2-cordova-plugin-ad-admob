@@ -383,6 +383,7 @@ public class AdmobOverlap implements PluginDelegate {
             String deviceId = Util.md5(ANDROID_ID).toUpperCase();
             builder.addTestDevice(deviceId);
         }
+        Log.d(LOG_TAG, "loadInterstitialAd2");
         AdRequest request = builder.build();
         interstitialView.loadAd(request);
     }
