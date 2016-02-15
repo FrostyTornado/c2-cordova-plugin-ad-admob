@@ -143,6 +143,7 @@ public class Admob extends CordovaPlugin implements PluginDelegate, Plugin {
 
             return true;
         } else if (action.equals("preloadInterstitialAd")) {
+            Log.d(LOG_TAG, "_preloadInterstitialAd");
             preloadInterstitialAd(action, args, callbackContext);
 
             return true;
@@ -269,6 +270,7 @@ public class Admob extends CordovaPlugin implements PluginDelegate, Plugin {
     }
 
     private void preloadInterstitialAd(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        Log.d(LOG_TAG, "_preloadInterstitialAd1");
         cordova.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -330,8 +332,8 @@ public class Admob extends CordovaPlugin implements PluginDelegate, Plugin {
     }
 
     public void _preloadInterstitialAd() {
+        Log.d(LOG_TAG, "_preloadInterstitialAd2");
         pluginDelegate._preloadInterstitialAd();
-        Log.e(LOG_TAG, "_preloadInterstitialAd");
     }
 
     public void _showInterstitialAd() {
